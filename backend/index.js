@@ -5,7 +5,7 @@ import booksRoute from "./routes/booksRoute.js";
 import cors from "cors";
 import "dotenv/config";
 
-const PORT = 4500 || process.env.PORT;
+const PORT =  process.env.PORT;
 
 const app = express();
 // Middleware for parsing request body
