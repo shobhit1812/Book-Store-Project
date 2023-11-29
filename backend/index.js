@@ -3,9 +3,11 @@ import { mongodbURL } from "./config.js";
 import mongoose from "mongoose";
 import booksRoute from "./routes/booksRoute.js";
 import cors from "cors";
-import "dotenv/config";
+import env from "dotenv";
 
-const PORT =  process.env.PORT;
+env.config();
+
+const PORT = process.env.PORT || 4500;
 
 const app = express();
 // Middleware for parsing request body
