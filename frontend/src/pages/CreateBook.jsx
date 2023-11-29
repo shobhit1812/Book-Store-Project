@@ -24,7 +24,7 @@ const CreateBook = () => {
       .post("https://book-store-backend-16ll.onrender.com/books", data)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar("Book Create Successfully", { variant: "success" });
+        enqueueSnackbar("Book Created Successfully", { variant: "success" });
         navigate("/");
       })
       .catch((error) => {
